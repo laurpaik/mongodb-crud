@@ -233,8 +233,11 @@ Let's see some what we can learn about the books in the database.
 	"author" : "Ernest Hemingway",
 	"published_on" : "2002-10-20"
 }
+# the forward slash is for numbers... if you use quotes it has to be
+# an exact string match
 > db.books.find({published_on: /20/}).count()
 36
+# -1 I think means the last, with limit(2) means limit to the last two
 > db.books.find({published_on: /20/}).sort({title: -1}).limit(2).pretty()
 {
 	"_id" : ObjectId("583ee3f3e6ae0faa5547072f"),
