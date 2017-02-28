@@ -132,6 +132,20 @@ command in `scripts/import/books.sh`.
 ```bash
 mongoimport --db=mongo-crud --collection=books --type=csv --headerline --file=data/books.csv
 ```
+```md
+- mongoimport
+  - its job is to import data into the mongo database!
+- --db=mongo-crud
+  - we tell it which database we're importing to!
+- --collection=books
+  - tells which collection we're importing!
+- --type=csv
+  - tells what type the file is!
+- --headerline
+  - tells it that the first line is a header!
+- --file=data/books.csv
+  - tells it the path of the file!
+```
 
 #### Code along: Bulk Load People
 
